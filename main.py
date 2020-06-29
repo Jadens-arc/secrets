@@ -52,7 +52,7 @@ def login(sender=None):
     menuBar.add_command(label="Add", command=lambda: add(password, logWin))
     menuBar.add_command(label="Remove")
     menuBar.add_command(label="Edit")
-    menuBar.add_command(label="Logout")
+    menuBar.add_command(label="Logout", command=lambda: logWin.destroy())
     logWin.config(menu=menuBar)
 
     logWin.mainloop()
